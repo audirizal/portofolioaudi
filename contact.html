@@ -45,23 +45,22 @@
                 <fieldset>
                     <legend>Contact Form</legend>
                     <div class="cont-form">
-                    <form onsubmit="return validateForm()">
-                    <input type="text" id="name" placeholder="Name *"><br>
-                    <input type="text" id="email" placeholder="Email *">
-                    <input type="text" id="subject" placeholder="Subject *"><br>
-                    <input type="text" placeholder="Phone No (Optional)" id="phone"><br>
-                    <textarea id="message" placeholder="Message *"></textarea><br>
-                    <button type="submit" id="btn-submit">Send</button>
-                    <p>Mohon Maaf Tombol Send masih dalam tahapan pengembangan. Silahkan pilih tombol "Send Me Email".</p>
-                    <div class="soci-contact">
-                        <a href="mailto:audirizaldi@gmail.com?subject=Site_Message&body=Hi" target="_blank">
-                        <div class="email">
-                             <img src="images/Iconslogo/envelope.png">
-                             
-                            <div class="text">Send Me Email</div>
+                    <form onsubmit="return validateForm()" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="d012becb-620d-4b87-a941-e15246fa8113">
+                        <input type="text" name="name" id="name" placeholder="Name *" required><br>
+                        <input type="email" name="email" id="email" placeholder="Email *" required>
+                        <input type="text" name="subject" id="subject" placeholder="Subject *"><br>
+                        <input type="text" name="phone" placeholder="Phone No (Optional)" id="phone"><br>
+                        <textarea name="message" id="message" placeholder="Message *" required></textarea><br>
+                        <button type="submit" id="btn-submit">Send</button>
+                        <div class="soci-contact">
+                            <a href="mailto:audirizaldi@gmail.com?subject=Site_Message&body=Hi" target="_blank">
+                                <div class="email">
+                                    <img src="images/Iconslogo/envelope.png">
+                                    <div class="text">Send Me Email</div>
+                                </div>
+                            </a>
                         </div>
-                        </a>
-                    </div>
                     </form>
                 </div>
                 </fieldset>
