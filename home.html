@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Audi - System Analyst Junior</title>
+    <title>Audi - Junior Web Developer & Data Analyst </title>
     <meta charset="utf-8" />
     <meta lang="en" />
     <meta name="author" content="Audi Rizaldi Marpaung" />
@@ -272,6 +272,20 @@
               </div>
             </div>
           </div>
+          <div class="col-lg-4 mt-4">
+            <div class="card">
+              <img src="images/movie-list.JPG" class="card-img-top" alt="portfolio" />
+              <div class="card-body">
+                <h4 class="card-title">Movie Katalog</h4>
+                <p class="card-text">
+                  Membuat list movie beserta detailnya dengan menggunakan API yang bertujuan untuk mencari informasi moivie yang layak ditonton berdasarkan rating. Proyek ini menggunakan framework ReactJS.
+                </p>
+                <div class="text-center">
+                  <a href="https://movie-list-challange.netlify.app" class="btn btn-success">Link</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -364,18 +378,14 @@
       <div class="text-part">
         <h1>Contact Me</h1>
         <div class="cont-form">
-          <form onsubmit="return validateForm()">
-            <input type="text" id="name" placeholder="Nama *" /><br />
-            <input type="text" id="email" placeholder="Email *" />
-            <input type="text" id="subject" placeholder="Subject *" /><br />
-            <input
-              type="text"
-              placeholder="Nomor HP (Optional)"
-              id="phone"
-            /><br />
-            <textarea id="message" placeholder="Message *"></textarea><br />
+          <form onsubmit="return validateForm()" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="d012becb-620d-4b87-a941-e15246fa8113">
+            <input type="text" name="name" id="name" placeholder="Name *" required><br>
+            <input type="email" name="email" id="email" placeholder="Email *" required>
+            <input type="text" name="subject" id="subject" placeholder="Subject *"><br>
+            <input type="text" name="phone" placeholder="Phone No (Optional)" id="phone"><br>
+            <textarea name="message" id="message" placeholder="Message *" required></textarea><br>
             <button type="submit" id="btn-submit">Send</button>
-            <p>Mohon Maaf Tombol Send masih dalam tahapan pengembangan.</p>
           </form>
         </div>
       </div>
